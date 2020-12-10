@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo-Company</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="charts.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <!-- <i class="fas fa-times" id="cancel"></i> -->
+    </label>
+    <div class="sidebar">
+        <header>
+            <div class="profile">
+                <img src="./assets/imagenes/random.jpg" class="profile_image" alt="profile image">
+                <span>Jhon Doe</span>
+            </div>
+        </header>
+        <ul>
+            <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+            <li><a href="#"><i class="fas fa-link"></i>Sortcuts</a></li>
+        </ul>
+    </div>
+    <!-- dentro de section tenemos que poner los contenedores de la imagen y una NAV bar -->
+    <section class="main-container">
+        <div class="search-and-noti"></div>
+        <div class="company-name">Dashboard</div>
+        <div class="dashboard-wrapper">
+            <div id='p1' class='panel'>
+                <h2>Panel principal</h2>
+                <div id='p1Chart'></div>
+            </div>
+            <div id='p2' class='panel'>
+                <h2>Sub panel 1</h2>
+                <div id='p2Chart'></div>
+            </div>
+            <div id='p3' class='panel'>
+                <h2>Sub panel 2</h2>
+                <div id='p3Chart'></div>
+            </div>
+            <div id='p4' class='panel'>
+                <h2>Sub panel 3</h2>
+                <div id='p4Chart'></div>
+            </div>
+            <div id="p5" class="panel">
+                <h2>Sub panel 4</h2>
+                <div id='p5Chart'></div>
+
+            </div>
+    </section>
+
+</body>
+
+</html>
