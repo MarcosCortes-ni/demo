@@ -1,5 +1,14 @@
-google.charts.load('current', { 'packages': ['sankey', 'corechart', 'bar', 'calendar'] });
-google.charts.setOnLoadCallback(drawCharts);
+var mycharjs = function() {
+    setTimeout(function(){
+        google.charts.load('current', { 'packages': ['sankey', 'corechart', 'bar', 'calendar'] })
+        google.charts.setOnLoadCallback(drawCharts)
+        mycharjs();
+    }, 1000)
+}
+
+setTimeout(function () {   
+    mycharjs();
+}, 1000)
 
 function drawCharts() {
     drawChartP1();
@@ -7,7 +16,9 @@ function drawCharts() {
     drawChartP3();
     drawChartP4();
     drawChartP5();
-}
+} 
+
+
 
 function drawChartP1() {
     var data = google.visualization.arrayToDataTable([
@@ -21,7 +32,9 @@ function drawChartP1() {
     ]);
 
     var chart = new google.visualization.Sankey(document.getElementById('p1Chart'));
-    chart.draw(data, {});
+   
+    chart.draw(data);
+    
 }
 
 function drawChartP2() {
@@ -35,11 +48,15 @@ function drawChartP2() {
     ]);
 
     var chart = new google.visualization.BarChart(document.getElementById('p2Chart'));
+   
     chart.draw(data, {
         backgroundColor: 'transparent',
         legend: 'bottom'
     });
+
 }
+
+          
 
 function drawChartP3() {
     var data = google.visualization.arrayToDataTable([
@@ -61,6 +78,8 @@ function drawChartP3() {
         backgroundColor: 'transparent',
         legend: 'bottom'
     });
+        
+
 }
 
 function drawChartP4() {
@@ -73,11 +92,12 @@ function drawChartP4() {
         ['Sleep', 7]
     ]);
 
-    var chart = new google.visualization.PieChart(document.getElementById('p4Chart'));
+    var chart = new google.visualization.PieChart(document.getElementById('p4Chart'));    
+
     chart.draw(data, {
         backgroundColor: 'transparent',
         legend: 'bottom'
-    });
+    }); 
 }
 
 function drawChartP5() {
@@ -97,4 +117,8 @@ function drawChartP5() {
 
     var chart = new google.visualization.AreaChart(document.getElementById('p5Chart'));
     chart.draw(data, options);
+      
 }
+
+
+

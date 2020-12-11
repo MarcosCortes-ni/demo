@@ -23,21 +23,29 @@
         justify-content: center;
         color: rgb(4, 35, 49);
         background: url(https://sc02.alicdn.com/kf/H385b131621b04227b70d18f552db29f17.jpg);
-        background-size: 100%;
+        background-size: 1550px;
         background-repeat: no-repeat;
         background-position: center;
         
     }
     .login-box{
-        width: 650px;
-        height: 300px;
-        padding: 40px 40px 40px 40px;
-        margin-top: 50px;
+        width: 500px;
+         min-width: 100%;
+         max-width: 100%;
+         padding: 10%;
+         margin: auto;
         border-radius: 10px;
         background-color: #ffffff;
         box-shadow: 13px 13px 20px #070707,
         -13px -13px 20px #353333;
     }
+
+     @media (max-width: 600px) {
+      .login-box {
+    width: 300px;
+        
+      }
+}
     .title {
     background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr0aBo1ZZjC10pMcemh-sPsGNZSysGASXImg&usqp=CAU);
     }

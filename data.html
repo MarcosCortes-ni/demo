@@ -9,13 +9,20 @@
     <script src="charts.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!--Load the Google AJAX API-->
+    <script type="text/javascript" src="https://www.google.com/jsapi">
+    </script>
+    <script type="text/javascript"></script>
+    <!--Load JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!--Load Paul Irish’s Debounced resize plug-in-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
 </head>
 
 <body>
     <input type="checkbox" id="check">
     <label for="check">
         <i class="fas fa-bars" id="btn"></i>
-        <!-- <i class="fas fa-times" id="cancel"></i> -->
     </label>
     <div class="sidebar">
         <header>
@@ -29,7 +36,6 @@
             <li><a href="#"><i class="fas fa-link"></i>Sortcuts</a></li>
         </ul>
     </div>
-    <!-- dentro de section tenemos que poner los contenedores de la imagen y una NAV bar -->
     <section class="main-container">
         <div class="search-and-noti"></div>
         <div class="company-name">Dashboard</div>

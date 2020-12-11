@@ -96,7 +96,7 @@ label #btn {
     margin-left: 150px;
 }
 
-section {
+.main-container {
     background: #ececec;
     height: 1020px;
     transition: all .5s;
@@ -120,7 +120,7 @@ section {
     padding-top: 30px;
     margin-left: 120px;
     margin-right: 90px;
-    width: auto;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(6, auto);
     grid-template-rows: repeat(3, auto);
@@ -141,8 +141,7 @@ section {
 }
 
 #p1Chart {
-    width: 680px;
-    max-width: 680px;
+    width: auto;
     padding-left: 60px;
     padding-right: 40px;
     padding-top: 10px;
@@ -176,5 +175,35 @@ section {
 }
 
 #p5Chart {
-    max-width: 950px;
+    width: auto;
+}
+
+@media (max-width: 600px) {
+    .main-container {
+        background: white;
+    }
+
+    .dashboard-wrapper {
+        display: initial;
+    }
+
+    #p1Chart {
+        padding-left: 100px;
+    }
+
+     #p2Chart {
+        padding-left: 100px;
+    }
+
+     #p3Chart {
+        padding-left: 100px;
+    }
+
+     #p4Chart {
+        padding-left: 100px;
+    }
+
+    #p5Chart {
+        padding-left: 100px;
+    }
 }
