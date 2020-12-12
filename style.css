@@ -170,7 +170,8 @@ label #btn {
     }
 
     .sidebar {
-        max-width: 30%;
+        max-width: 50%;
+        opacity: 0.9;
     }
 
      .search-and-noti {
@@ -203,7 +204,7 @@ label #btn {
         padding-right: 150px;
     } */
 
-    #p1 {
+    /* #p1 {
         margin-left: 200px;
     }
 
@@ -225,6 +226,6 @@ label #btn {
 
     #p6 {
         margin-left: 200px;
-    }
+    } */
 
 }
