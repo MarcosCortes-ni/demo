@@ -5,6 +5,7 @@
     text-decoration: none;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    background: #ececec;
 }
 
 .sidebar {
@@ -36,7 +37,7 @@
 }
 
 .sidebar header {
-    font-size: 16px;
+    font-size: 25px;
     color: white;
     text-align: center;
     line-height: 70px;
@@ -109,6 +110,21 @@ label #btn {
 
 }
 
+.logout {
+    padding-left: 50px;
+    padding-top: 20px;
+    margin-left: 80%;
+}
+
+.logout_btn {
+    padding: 5px;
+    background: #19B3D3;
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
 .company-name {
     padding-top: 20px;
     padding-left: 120px;
@@ -120,34 +136,45 @@ label #btn {
     padding-top: 30px;
     margin-left: 120px;
     margin-right: 90px;
-    width: 90%;
+    /* width: 85%;  */
     display: grid;
-    grid-template-columns: repeat(6, auto);
-    grid-template-rows: repeat(3, auto);
-    column-gap: 15px;
-    row-gap: 20px;    
+    grid-template-columns: repeat(3, max-content);
+    gap: 100px;   
 }
 
-.dashboard-wrapper .panel {
+.sub-panel{
+    padding-top: 30px;
+    margin-left: 120px;
+    margin-right: 90px;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 100px;
+}
+
+.dashboard-wrapper .panel, .sub-panel .panel {
     text-align: center;
     background-color: #fff;
     border: 1px solid #d3d3d3;
     box-shadow: 0 0 4px 1px rgba(143,143,143,.2);
-    padding: 15px;
+    margin-left: 20px;
 }
 
-.dashboard-wrapper #p1.panel {
+/* .dashboard-wrapper #p1.panel {
     grid-column: 1 / 4;
-}
+} */
 
-#p1Chart {
-    width: auto;
+/* #p1Chart {
+    width: 100%;
     padding-left: 60px;
     padding-right: 40px;
     padding-top: 10px;
-}
+} */
 
-.dashboard-wrapper #p2.panel {
+/* #p1 {
+    width: 400px;
+} */
+
+/* .dashboard-wrapper #p2.panel {
     grid-column: 1 / 3;
     grid-row: 2 / 4;
 }
@@ -175,21 +202,37 @@ label #btn {
 }
 
 #p5Chart {
-    width: auto;
-}
+    width: 90%;
+} */
 
 @media (max-width: 600px) {
     .main-container {
         background: white;
     }
 
+    .sidebar {
+        max-width: 30%;
+    }
+
+    .logout {
+        margin-left: 60%;
+    }
+
     .dashboard-wrapper {
+        display: initial;
+    }
+
+    .sub-panel {
         display: initial;
     }
 
     #p1Chart {
         padding-left: 100px;
     }
+
+    /* #p1 {
+    width: 450px;
+} */
 
      #p2Chart {
         padding-left: 100px;
