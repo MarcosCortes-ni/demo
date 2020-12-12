@@ -135,17 +135,8 @@ label #btn {
     margin-right: 90px;
     display: grid;
     grid-template-columns: repeat(3, max-content);
-    /* gap: 100px;    */
+    gap: 100px;   
 }
-
-/* .sub-panel{
-    padding-top: 30px;
-    margin-left: 120px;
-    margin-right: 90px;
-    display: grid;
-    grid-template-columns: repeat(3, max-content);
-    gap: 100px;
-} */
 
 .dashboard-wrapper .panel, .sub-panel .panel {
     text-align: center;
@@ -202,7 +193,7 @@ label #btn {
         /* height: 400px;
         width: 400px;
         padding-right: 150px; */
-        margin-left: 80px;
+        margin-left: 70px;
     }
 
     /* #p1 {
