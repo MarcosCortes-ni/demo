@@ -135,7 +135,7 @@ label #btn {
     margin-right: 90px;
     display: grid;
     grid-template-columns: repeat(3, max-content);
-    gap: 100px;   
+    gap: 10%;   
 }
 
 .dashboard-wrapper .panel, .sub-panel .panel {
@@ -161,7 +161,7 @@ label #btn {
     }
 
     .sidebar {
-        max-width: 30%;
+        max-width: 35%;
         opacity: 0.9;
     }
 
@@ -169,8 +169,12 @@ label #btn {
         padding-left: 25px; 
     }
 
+    .logout_btn {
+        margin-left: 25%;
+    }
+
     #check:checked ~ label #btn {
-        left: 172px;
+        left: 200px;
     }
 
     .logout {
@@ -179,10 +183,12 @@ label #btn {
 
     .dashboard-wrapper {
         display: initial;
+    
     }
 
     .sub-panel {
         display: initial;
+    
     }
 
      .table-canvas {
@@ -196,28 +202,14 @@ label #btn {
         margin-left: 50px;
     }
 
-    /* #p1 {
-        margin-left: 100px;
-    }
-
-    #p2 {
-        margin-left: 100px;
-    }
-
-    #p3 {
-        margin-left: 100px;
-    }
-
-    #p4 {
-        margin-left: 100px;
-    }
-
-    #p5 {
-        margin-left: 100px;
-    }
-
+    #p1,
+    #p2,
+    #p3,
+    #p4,
+    #p5,
     #p6 {
-        margin-left: 100px;
-    } */
-
+        width: 93%;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
 }
