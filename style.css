@@ -161,7 +161,7 @@ label #btn {
     }
 
     .sidebar {
-        max-width: 35%;
+        max-width: 45%;
         opacity: 0.9;
     }
 
@@ -170,12 +170,12 @@ label #btn {
     }
 
     .logout_btn {
-        margin-left: 25%;
+        margin-left: 15%;
     }
 
-    #check:checked ~ label #btn {
+    /* #check:checked ~ label #btn {
         left: 200px;
-    }
+    } */
 
     .logout {
         margin-left: 60%;
